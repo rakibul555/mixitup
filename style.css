@@ -1,0 +1,133 @@
+
+
+/* our mixitup css */
+
+.our-mixitup{
+    background-color: #F0F0F0;
+}
+
+/* title CSS  */
+
+.mixitup-border {
+    width: 10px;
+    height: 3px;
+    background: #0013fd;
+    margin: 0 auto;
+    position: relative;
+}
+.mixitup-border:before {
+    content: "";
+    position: absolute;
+    right: 160%;
+    top: 0;
+    width: 19px;
+    height: 3px;
+    background: #fd0000;
+}
+
+.mixitup-border:after {
+    content: "";
+    position: absolute;
+    left: 160%;
+    top: 0;
+    width: 5px;
+    height: 3px;
+    background: #b91a00;
+}
+
+.mixitup-btn{
+    margin-top: 139px !important;
+}
+
+.mixitup-title {
+    color: #e40000;
+}
+
+.mixitup-title h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.section-padding{
+    padding-top: 3rem;
+}
+
+.mixitup-control-active{
+    background: red;
+    color: green;
+}
+
+
+.mixitup-item {
+    position: relative;
+}
+
+.mix-content i {
+    color: #fff;
+    
+    width: 0px;
+    height: 0px;
+    border: 3px solid #fff;
+    text-align: center;
+    line-height: 33px;
+    border-radius: 100%;
+    font-size: 0px;
+    transition: .5s;
+    opacity: 0;
+}
+.mix-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    cursor: pointer;
+}
+.mixitup-item:hover .mix-content i{
+    font-size: 20px;
+    opacity: 1;
+    border: 3px solid #fff;
+    width: 40px;
+    height: 40px;
+}
+.mixitup-item:hover .mix-content{
+    visibility: visible;
+    opacity: .7;
+    
+}
+.margin-top {
+    margin-top: 28px;
+}
+.mixitup-img {
+    overflow: hidden;
+}
+.mixitup-img img{
+    transition: 1s;
+}
+.mixitup-item:hover .mixitup-img img{
+    transform: scale(1.5);
+}
+button.mix {
+    border: none;
+    border-radius: 0px;
+    margin: 0px 7px;
+    color: #fff;
+}
+
+
+@media(max-width: 768px){
+    .mixitup-item {
+        margin-top: 30px;
+    }
+    
+.btn.btn-primary.mix {
+    margin-top: 30px;
+  }
+}
